@@ -1,4 +1,4 @@
-package testClasses;
+package testClasses.BufferClass;
 
 import java.util.concurrent.TimeUnit;
 

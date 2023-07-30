@@ -5,7 +5,7 @@ import pageClasses.LogInPage;
 
 public class LogIn extends baseClass {
 
-	@Test
+	@Test(priority=1)
 
 	public void verifyLoginPage() throws InterruptedException {
 		driver.get(url);
@@ -19,6 +19,7 @@ public class LogIn extends baseClass {
 		Thread.sleep(2000);
 		pg.clickLogin();
 		Thread.sleep(5000);
+		
 		
 		
 

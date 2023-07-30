@@ -36,6 +36,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		
 		<testResources>
 			<testResource>
 				<directory>src/test/resources</directory>
@@ -44,6 +45,9 @@
 		</testResources>
 
 	</build>
+	
+	
+	
 	<dependencies>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
