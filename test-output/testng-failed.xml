@@ -11,6 +11,7 @@
           <include name="verifyProductsPage"/>
           <include name="launchBrowser"/>
           <include name="verifyCurrentUrl"/>
+          <include name="verifyPriceDynamically"/>
         </methods>
       </class> <!-- testClasses.LogIn -->
     </classes>

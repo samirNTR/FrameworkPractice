@@ -1,37 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Actual Page is https://saucelabs.com/]]>
+    </line>
+    <line>
+      <![CDATA[After navigate back URL https://www.saucedemo.com/inventory.html]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-07-31T13:16:49 IST" name="Default suite" finished-at="2023-07-31T13:17:18 IST" duration-ms="29064">
+  <suite started-at="2023-07-31T19:43:06 IST" name="Failed suite [Default suite]" finished-at="2023-07-31T19:43:47 IST" duration-ms="40727">
     <groups>
     </groups>
-    <test started-at="2023-07-31T13:16:49 IST" name="Default test" finished-at="2023-07-31T13:17:18 IST" duration-ms="29064">
+    <test started-at="2023-07-31T19:43:06 IST" name="Default test(failed)" finished-at="2023-07-31T19:43:47 IST" duration-ms="40727">
       <class name="testClasses.LogIn">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testClasses.LogIn@1e0b4072]" started-at="2023-07-31T13:16:49 IST" name="setUp" finished-at="2023-07-31T13:16:49 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testClasses.LogIn@6340e5f0]" started-at="2023-07-31T19:43:06 IST" name="setUp" finished-at="2023-07-31T19:43:06 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testClasses.LogIn@1e0b4072]" started-at="2023-07-31T13:16:49 IST" name="launchBrowser" finished-at="2023-07-31T13:16:52 IST" duration-ms="3406" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testClasses.LogIn@6340e5f0]" started-at="2023-07-31T19:43:06 IST" name="launchBrowser" finished-at="2023-07-31T19:43:10 IST" duration-ms="3870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="verifyLoginPage()[pri:1, instance:testClasses.LogIn@1e0b4072]" started-at="2023-07-31T13:16:52 IST" name="verifyLoginPage" finished-at="2023-07-31T13:17:13 IST" duration-ms="21335" status="PASS">
+        <test-method signature="verifyLoginPage()[pri:1, instance:testClasses.LogIn@6340e5f0]" started-at="2023-07-31T19:43:10 IST" name="verifyLoginPage" finished-at="2023-07-31T19:43:37 IST" duration-ms="26344" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPage -->
-        <test-method signature="verifyCurrentUrl()[pri:0, instance:testClasses.LogIn@1e0b4072]" started-at="2023-07-31T13:17:13 IST" name="verifyCurrentUrl" finished-at="2023-07-31T13:17:14 IST" depends-on-methods="testClasses.LogIn.verifyLoginPage" duration-ms="43" status="PASS">
+        <test-method signature="verifyCurrentUrl()[pri:0, instance:testClasses.LogIn@6340e5f0]" started-at="2023-07-31T19:43:37 IST" name="verifyCurrentUrl" finished-at="2023-07-31T19:43:37 IST" depends-on-methods="testClasses.LogIn.verifyLoginPage" duration-ms="257" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Actual Page is https://saucelabs.com/]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyCurrentUrl -->
-        <test-method signature="verifyProductsPage()[pri:0, instance:testClasses.LogIn@1e0b4072]" started-at="2023-07-31T13:17:14 IST" name="verifyProductsPage" finished-at="2023-07-31T13:17:18 IST" depends-on-methods="testClasses.LogIn.verifyCurrentUrl" duration-ms="4112" status="PASS">
+        <test-method signature="verifyProductsPage()[pri:0, instance:testClasses.LogIn@6340e5f0]" started-at="2023-07-31T19:43:37 IST" name="verifyProductsPage" finished-at="2023-07-31T19:43:41 IST" depends-on-methods="testClasses.LogIn.verifyCurrentUrl" duration-ms="4593" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[After navigate back URL https://www.saucedemo.com/inventory.html]]>
+            </line>
           </reporter-output>
         </test-method> <!-- verifyProductsPage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.LogIn@1e0b4072]" started-at="2023-07-31T13:17:18 IST" name="closeBrowser" finished-at="2023-07-31T13:17:18 IST" duration-ms="128" status="PASS">
+        <test-method signature="verifyPriceDynamically()[pri:0, instance:testClasses.LogIn@6340e5f0]" started-at="2023-07-31T19:43:41 IST" name="verifyPriceDynamically" finished-at="2023-07-31T19:43:47 IST" depends-on-methods="testClasses.LogIn.verifyProductsPage" duration-ms="5314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPriceDynamically -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.LogIn@6340e5f0]" started-at="2023-07-31T19:43:47 IST" name="closeBrowser" finished-at="2023-07-31T19:43:47 IST" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testClasses.LogIn -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
 </testng-results>

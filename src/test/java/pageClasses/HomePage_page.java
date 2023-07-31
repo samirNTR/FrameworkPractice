@@ -34,8 +34,8 @@ public class HomePage_page {
 	@FindBy(xpath = "//a[@id='reset_sidebar_link']")
 	WebElement resetAppStateLink;
 	
-	
-	
+	@FindBy(xpath="//span[@class='shopping_cart_badge']")
+	WebElement cartButton;
 	
 	@FindBy(xpath = "//select[@class='product_sort_container']")
 	WebElement mainDropDown;
@@ -65,5 +65,8 @@ public class HomePage_page {
 	{
 		resetAppStateLink.click();
 	}
-	
+	public void clickOnShoppingCartButton()
+	{
+		cartButton.click();
+	}
 }
