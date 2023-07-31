@@ -5,12 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+public class HomePage_page {
 	
 	public WebDriver driver;
 	
 	
-	public HomePage(WebDriver driver)
+	public HomePage_page(WebDriver driver)
 	{
 		
 		this.driver=driver;
@@ -18,7 +18,7 @@ public class HomePage {
 		PageFactory.initElements(driver,this);
 	}
 
-	
+	//Three Dots
 	@FindBy(xpath="//button[@id='react-burger-menu-btn']")
 	WebElement openMenuButton;
 	
@@ -40,6 +40,30 @@ public class HomePage {
 	@FindBy(xpath = "//select[@class='product_sort_container']")
 	WebElement mainDropDown;
 	
+	public void clickOnOpenMenuButton()
+	{
+		openMenuButton.click();
+	}
 	
+
+	public void clickOnAllItemsLink()
+	{
+		allItemsLink.click();
+	}
+
+	public void clickOnAboutLink()
+	{
+		aboutLink.click();
+	}
+
+	public void clickOnLogOut()
+	{
+		logoutLink.click();
+	}
+
+	public void clickOnResetAppStateLink()
+	{
+		resetAppStateLink.click();
+	}
 	
 }
