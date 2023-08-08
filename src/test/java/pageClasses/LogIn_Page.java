@@ -5,17 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LogInPage {
+public class LogIn_Page extends BasePageClass {
 
-	public  WebDriver driver;
+	public LogIn_Page(WebDriver driver)
 
-	public LogInPage(WebDriver driver)
-	
 	{
-
-		this.driver = driver;
-
-		PageFactory.initElements(driver, this);
+		super(driver);
 
 	}
 
