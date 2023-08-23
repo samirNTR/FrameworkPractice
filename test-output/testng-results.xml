@@ -8,46 +8,46 @@
       <![CDATA[After navigate back URL https://www.saucedemo.com/inventory.html]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-08-08T21:48:09 IST" name="Default suite" finished-at="2023-08-08T21:48:42 IST" duration-ms="33671">
+  <suite started-at="2023-08-23T23:30:47 IST" name="Suite" finished-at="2023-08-23T23:32:09 IST" duration-ms="82205">
     <groups>
     </groups>
-    <test started-at="2023-08-08T21:48:09 IST" name="Default test" finished-at="2023-08-08T21:48:42 IST" duration-ms="33671">
+    <test started-at="2023-08-23T23:30:47 IST" name="Test" finished-at="2023-08-23T23:32:09 IST" duration-ms="82205">
       <class name="testClasses.LogIn">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testClasses.LogIn@791f145a]" started-at="2023-08-08T21:48:09 IST" name="setUp" finished-at="2023-08-08T21:48:09 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testClasses.LogIn@4b45a2f5]" started-at="2023-08-23T23:30:47 IST" name="setUp" finished-at="2023-08-23T23:30:47 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testClasses.LogIn@791f145a]" started-at="2023-08-08T21:48:09 IST" name="launchBrowser" finished-at="2023-08-08T21:48:13 IST" duration-ms="4473" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testClasses.LogIn@4b45a2f5]" started-at="2023-08-23T23:30:47 IST" name="launchBrowser" finished-at="2023-08-23T23:31:40 IST" duration-ms="53010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="verifyLoginPage()[pri:1, instance:testClasses.LogIn@791f145a]" started-at="2023-08-08T21:48:13 IST" name="verifyLoginPage" finished-at="2023-08-08T21:48:33 IST" duration-ms="19523" status="PASS">
+        <test-method signature="verifyLoginPage()[pri:1, instance:testClasses.LogIn@4b45a2f5]" started-at="2023-08-23T23:31:40 IST" name="verifyLoginPage" finished-at="2023-08-23T23:31:50 IST" duration-ms="9452" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPage -->
-        <test-method signature="verifyCurrentUrl()[pri:0, instance:testClasses.LogIn@791f145a]" started-at="2023-08-08T21:48:33 IST" name="verifyCurrentUrl" finished-at="2023-08-08T21:48:33 IST" depends-on-methods="testClasses.LogIn.verifyLoginPage" duration-ms="16" status="PASS">
+        <test-method signature="verifyCurrentUrl()[pri:0, instance:testClasses.LogIn@4b45a2f5]" started-at="2023-08-23T23:31:50 IST" name="verifyCurrentUrl" finished-at="2023-08-23T23:32:00 IST" depends-on-methods="testClasses.LogIn.verifyLoginPage" duration-ms="10055" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Actual Page is https://saucelabs.com/]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyCurrentUrl -->
-        <test-method signature="verifyProductsPage()[pri:0, instance:testClasses.LogIn@791f145a]" started-at="2023-08-08T21:48:33 IST" name="verifyProductsPage" finished-at="2023-08-08T21:48:37 IST" depends-on-methods="testClasses.LogIn.verifyCurrentUrl" duration-ms="4102" status="PASS">
+        <test-method signature="verifyProductsPage()[pri:0, instance:testClasses.LogIn@4b45a2f5]" started-at="2023-08-23T23:32:00 IST" name="verifyProductsPage" finished-at="2023-08-23T23:32:04 IST" depends-on-methods="testClasses.LogIn.verifyCurrentUrl" duration-ms="4164" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[After navigate back URL https://www.saucedemo.com/inventory.html]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyProductsPage -->
-        <test-method signature="verifyPriceDynamically()[pri:0, instance:testClasses.LogIn@791f145a]" started-at="2023-08-08T21:48:37 IST" name="verifyPriceDynamically" finished-at="2023-08-08T21:48:42 IST" depends-on-methods="testClasses.LogIn.verifyProductsPage" duration-ms="5220" status="PASS">
+        <test-method signature="verifyPriceDynamically()[pri:0, instance:testClasses.LogIn@4b45a2f5]" started-at="2023-08-23T23:32:04 IST" name="verifyPriceDynamically" finished-at="2023-08-23T23:32:09 IST" depends-on-methods="testClasses.LogIn.verifyProductsPage" duration-ms="5193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPriceDynamically -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.LogIn@791f145a]" started-at="2023-08-08T21:48:42 IST" name="closeBrowser" finished-at="2023-08-08T21:48:42 IST" duration-ms="288" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.LogIn@4b45a2f5]" started-at="2023-08-23T23:32:09 IST" name="closeBrowser" finished-at="2023-08-23T23:32:09 IST" duration-ms="273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testClasses.LogIn -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

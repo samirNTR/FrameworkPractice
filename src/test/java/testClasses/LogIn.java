@@ -3,6 +3,7 @@ package testClasses;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -21,22 +22,26 @@ public class LogIn extends baseClass {
         pg = new LogIn_Page(driver);
         hp = new Products_Page(driver);
 
+      
         pg.enterUsername(username);
         Thread.sleep(2000);
         pg.enterPassword(password);
         Thread.sleep(2000);
+     
+      
         pg.clickLogin();
         Thread.sleep(5000);
+    
+    }
+
+    @Test(dependsOnMethods = "verifyLoginPage")   //2....................................
+    public void verifyCurrentUrl() throws InterruptedException {
 
         hp.clickOnOpenMenuButton();
         Thread.sleep(2000);
 
         hp.clickOnAboutLink();
         Thread.sleep(2000);
-    }
-
-    @Test(dependsOnMethods = "verifyLoginPage")   //2....................................
-    public void verifyCurrentUrl() {
         String actPage = driver.getCurrentUrl();
         Reporter.log("Actual Page is " + actPage);
         Assert.assertEquals(actPage, "https://saucelabs.com/");

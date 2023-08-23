@@ -2,8 +2,13 @@ package testClasses;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -32,8 +37,11 @@ public class baseClass {
 
 	@BeforeClass
 	public void launchBrowser() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+		
+		 WebDriverManager.chromedriver().setup(); 
+		 
+		 driver = new ChromeDriver();
+		
 
 		/*
 		 * public void launchBrowser(String browser) { if
@@ -52,7 +60,7 @@ public class baseClass {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-
+		  
 		System.out.println("I am in base class");
 	}
 
