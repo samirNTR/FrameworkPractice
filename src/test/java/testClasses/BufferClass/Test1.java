@@ -6,9 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import com.google.common.base.Stopwatch;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -23,13 +27,29 @@ public class Test1 {
 		driver.get("https://www.saucedemo.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		/*Stopwatch watch= null;
 		//Enter login credentials
+		try {
+		watch=Stopwatch.createStarted();*/
 		WebElement username = driver.findElement(By.xpath(" //input[@data-test='username']"));
 		username.sendKeys("standard_user");
 		WebElement password = driver.findElement(By.xpath("//input[@data-test='password'] "));
 		password.sendKeys("secret_sauce");
-
+		/*
+		 * }
+		 * 
+		 * catch(Exception e) {
+		 * 
+		 * watch.stop(); e.printStackTrace();
+		 * 
+		 * System.out.println(watch.elapsed(TimeUnit.SECONDS) + "seconds"); }
+		 */
 		//click login
+		
+		WebDriverWait wait= new WebDriverWait(driver, 5);
+		
+		wait.until(ExpectedConditions.alertIsPresent());
 		WebElement loginbtn = driver.findElement(By.xpath("//input[@type='submit']"));
 		loginbtn.click();
 
