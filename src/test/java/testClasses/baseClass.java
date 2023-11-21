@@ -2,6 +2,8 @@ package testClasses;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
@@ -25,6 +27,7 @@ public class baseClass {
 	public String username;
 	public String password;
 	public static WebDriver driver;
+	Logger log= (Logger) LogManager.getLogger(getClass());
 	
 	@BeforeSuite
 	public void setUp() {

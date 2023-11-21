@@ -3,17 +3,21 @@ package testClasses;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.core.Logger;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import pageClasses.Products_Page;
 import pageClasses.LogIn_Page;
 
 public class LogIn extends baseClass {
+	
 	public LogIn_Page pg;
     public Products_Page hp;
 
@@ -25,9 +29,10 @@ public class LogIn extends baseClass {
       
         pg.enterUsername(username);
         Thread.sleep(2000);
+        log.info("Username Entered");
         pg.enterPassword(password);
         Thread.sleep(2000);
-     
+     log.info("Password enterd");
       
         pg.clickLogin();
         Thread.sleep(5000);
@@ -56,6 +61,9 @@ public class LogIn extends baseClass {
         Assert.assertEquals(actPage1, "https://www.saucedemo.com/inventory.html");
         String title = driver.findElement(By.xpath("//span[text()='Products']")).getText();
         Assert.assertEquals(title, "Products");
+        
+               
+        
     }
 
     @Test(dependsOnMethods ="verifyProductsPage" )

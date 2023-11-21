@@ -3,6 +3,7 @@ package pageClasses;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
 public class BasePageClass {
@@ -17,7 +18,7 @@ public class BasePageClass {
 
 		this.driver = driver;
 
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver,this);
 
 	}
 	
@@ -37,6 +38,8 @@ public class BasePageClass {
 	//Reset App store
 	@FindBy(xpath = "//a[@id='reset_sidebar_link']")
 	WebElement resetAppStateLink;
+	
+
 	
 	
 	//Cart Badge
