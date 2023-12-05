@@ -1,10 +1,2 @@
-13:45:06.680 [main] INFO  LogIn - Username Entered
-13:45:08.751 [main] INFO  LogIn - Password enterd
-13:50:30.232 [main] INFO  LogIn - Username Entered
-13:50:32.309 [main] INFO  LogIn - Password enterd
-13:52:51.947 [main] INFO  LogIn - Username Entered
-13:52:54.084 [main] INFO  LogIn - Password enterd
-13:56:11.297 [main] INFO  testClasses.baseClass - Username Entered
-13:56:13.473 [main] INFO  testClasses.baseClass - Password enterd
-13:59:47.335 [main] INFO  testClasses.LogIn - Username Entered
-13:59:49.443 [main] INFO  testClasses.LogIn - Password enterd
+13:27:59.068 [main] INFO  testClasses.LogIn - Username Entered
+13:28:01.147 [main] INFO  testClasses.LogIn - Password enterd

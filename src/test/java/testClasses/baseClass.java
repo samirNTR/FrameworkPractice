@@ -16,8 +16,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageClasses.Products_Page;
-import pageClasses.LogIn_Page;
 import utilities.ReadConfig;
 
 public class baseClass {
@@ -27,7 +25,7 @@ public class baseClass {
 	public String username;
 	public String password;
 	public static WebDriver driver;
-	Logger log= (Logger) LogManager.getLogger(getClass());
+	Logger log=  (Logger) LogManager.getLogger(this.getClass());
 	
 	@BeforeSuite
 	public void setUp() {
@@ -63,6 +61,9 @@ public class baseClass {
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		
+		
 		  
 		System.out.println("I am in base class");
 	}

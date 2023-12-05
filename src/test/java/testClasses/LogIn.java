@@ -75,6 +75,7 @@ public class LogIn extends baseClass {
         for (WebElement allPrices1 : allPrices) {
             String pricetext = allPrices1.getText().replaceAll("[^0-9.0]", " ");
             double priceValue = Double.parseDouble(pricetext);
+          
             list.add(priceValue);
         }
 

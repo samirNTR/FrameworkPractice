@@ -40,6 +40,7 @@ public class BasePageClass {
 	WebElement resetAppStateLink;
 	
 
+
 	
 	
 	//Cart Badge
