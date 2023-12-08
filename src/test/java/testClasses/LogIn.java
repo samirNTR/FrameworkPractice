@@ -96,7 +96,7 @@ public class LogIn extends baseClass {
         
         String actTitle=driver.findElement(By.xpath("//span[text()='Your Cart']")).getText();
         System.out.println(actTitle);
-        Assert.assertEquals(actTitle, "Your Cart1233333","I am in Your Cart Page");
+        Assert.assertEquals(actTitle, "Your Cart","I am in Your Cart Page");
         
         
     }

@@ -53,14 +53,14 @@ public class Reporting extends baseClass implements ITestListener {
 	public void onStart(ITestContext Result) {
 		System.out.println("On Start method invoked....");
 		configureReport();
-	
+
 	}
 
 	// onFinish method is called after all Tests are executed
 	public void onFinish(ITestContext Result) {
 		System.out.println("On Finished method invoked....");
 		reports.flush();// it is mandatory to call flush method to ensure information is written to the
-						// started reporter.
+		// started reporter.
 
 	}
 
@@ -70,57 +70,54 @@ public class Reporting extends baseClass implements ITestListener {
 		test = reports.createTest(Result.getName());
 
 		test.log(Status.PASS,
+
 				MarkupHelper.createLabel("Name of the passed test case is: " + Result.getName(), ExtentColor.GREEN));
 	}
 
 	// When Test case get failed, this method is called.
 
-	public void onTestFailure(ITestResult Result) 
-	{
-		
+	public void onTestFailure(ITestResult Result) {
+
 		System.out.println("Name of test method failed:" + Result.getName());
 		test = reports.createTest(Result.getName());// create entry in html report
 		test.log(Status.FAIL,
 				MarkupHelper.createLabel("Name of the failed test case is: " + Result.getName(), ExtentColor.RED));
 
+		//Screenshot implementation
+		TakesScreenshot screenshotDriver = (TakesScreenshot) driver;
+		File screenshotFile = screenshotDriver.getScreenshotAs(OutputType.FILE);
 		
-		 TakesScreenshot screenshotDriver = (TakesScreenshot) driver;
-		 File screenshotFile = screenshotDriver.getScreenshotAs(OutputType.FILE);
-		
-		 String screenshotDirPath = System.getProperty("user.dir") + File.separator + "Screenshots";
-		 
-		 // Create the Screenshots directory if it doesn't exist
-	        File screenshotDir = new File(screenshotDirPath);
-	        if (!screenshotDir.exists()) {
-	            screenshotDir.mkdir();
-	        }
+		 // Define the path for the screenshot directory
+		String screenshotDirPath = System.getProperty("user.dir") + File.separator + "Screenshots"; 
 
-	        // Define the path for the screenshot file
-	        String screenShotPath = screenshotDirPath + File.separator + Result.getName() + ".jpg";
+		// Create the Screenshots directory if it doesn't exist
+		File screenshotDir = new File(screenshotDirPath);
+		if (!screenshotDir.exists()) {
+			screenshotDir.mkdir();
+		}
 
-	        try {
-	            // Copying the screenshot file to the specified location
-	            FileUtils.copyFile(screenshotFile, new File(screenShotPath));
+		// Define the path for the screenshot file
+		String screenShotPath = screenshotDirPath + File.separator + Result.getName() + ".jpg";
 
-	            // Adding screenshot to the Extent Report
-	            test.fail("Captured Screenshot is below:" + test.addScreenCaptureFromPath(screenShotPath));
+		try {
+			// Copying the screenshot file to the specified location
+			FileUtils.copyFile(screenshotFile, new File(screenShotPath));
 
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
-	    }
-		
+			// Adding screenshot to the Extent Report
+			test.fail("Captured Screenshot is below:" + test.addScreenCaptureFromPath(screenShotPath));
 
-		// test.addScreenCaptureFromPath(null)
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
-	
+	// test.addScreenCaptureFromPath(null)
 
 	// When Test case get Skipped, this method is called.
 
 	public void onTestSkipped(ITestResult Result) {
 		System.out.println("Name of test method skipped:" + Result.getName());
 
-	
 		test = reports.createTest(Result.getName());
 		test.log(Status.SKIP,
 				MarkupHelper.createLabel("Name of the skip test case is: " + Result.getName(), ExtentColor.YELLOW));
