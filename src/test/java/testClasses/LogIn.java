@@ -3,18 +3,15 @@ package testClasses;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.core.Logger;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
-import pageClasses.Products_Page;
 import pageClasses.LogIn_Page;
+import pageClasses.Products_Page;
+
 
 public class LogIn extends baseClass {
 	
@@ -23,7 +20,8 @@ public class LogIn extends baseClass {
 
     @Test(priority = 1)                                   //1...............................................
     public void verifyLoginPage() throws InterruptedException {
-        pg = new LogIn_Page(driver);
+      
+		pg = new LogIn_Page(driver);
         hp = new Products_Page(driver);
 
       
