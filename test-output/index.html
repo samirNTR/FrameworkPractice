@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testClasses.LogIn" class="method navigator-link" hash-for-method="verifyPriceDynamically">verifyPriceDynamically</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,11 +127,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testClasses.LogIn" class="method navigator-link" hash-for-method="verifyPriceDynamically">verifyPriceDynamically</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testClasses.LogIn" class="method navigator-link" hash-for-method="verifyProductsPage">verifyProductsPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -133,6 +142,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testClasses.LogIn</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPriceDynamically">
+                  </a> <!-- verifyPriceDynamically -->
+                  <span class="method-name">verifyPriceDynamically</span>
+                  <div class="stack-trace">java.lang.AssertionError: I am in Your Cart Page expected [Your Cart1233333] but found [Your Cart]
+	at testClasses.LogIn.verifyPriceDynamically(LogIn.java:99)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -151,13 +180,6 @@
                   <a name="verifyLoginPage">
                   </a> <!-- verifyLoginPage -->
                   <span class="method-name">verifyLoginPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPriceDynamically">
-                  </a> <!-- verifyPriceDynamically -->
-                  <span class="method-name">verifyPriceDynamically</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -228,24 +250,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyCurrentUrl')
 data.setCell(0, 2, 'testClasses.LogIn')
-data.setCell(0, 3, 10242);
+data.setCell(0, 3, 13839);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyLoginPage')
 data.setCell(1, 2, 'testClasses.LogIn')
-data.setCell(1, 3, 9535);
+data.setCell(1, 3, 9391);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyPriceDynamically')
 data.setCell(2, 2, 'testClasses.LogIn')
-data.setCell(2, 3, 5313);
+data.setCell(2, 3, 5259);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyProductsPage')
 data.setCell(3, 2, 'testClasses.LogIn')
-data.setCell(3, 3, 4305);
+data.setCell(3, 3, 4147);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -257,15 +279,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyCurrentUrl</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Actual Page is https://saucelabs.com/</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">verifyProductsPage</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">After navigate back URL https://www.saucedemo.com/inventory.html</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyCurrentUrl</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Actual Page is https://saucelabs.com/</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -290,27 +312,29 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">273 ms</span>
+                <span class="method-start">147 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginPage</span>
-                <span class="method-start">3249 ms</span>
+                <span class="method-start">2315 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyCurrentUrl</span>
-                <span class="method-start">12831 ms</span>
+                <span class="method-start">11746 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyProductsPage</span>
-                <span class="method-start">23092 ms</span>
+                <span class="method-start">25591 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyPriceDynamically</span>
-                <span class="method-start">27397 ms</span>
+                <span class="method-start">29751 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">32710 ms</span>
+                <span class="method-start">35478 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
