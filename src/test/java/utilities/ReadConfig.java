@@ -52,7 +52,7 @@ public class ReadConfig {
 			return username;
 		}
 		else
-			throw new RuntimeException("url not specified in config file");
+			throw new RuntimeException("username not specified in config file");
 	}
 
 	public String getPassword() {
@@ -63,7 +63,7 @@ public class ReadConfig {
 			return password;
 		}
 		else
-			throw new RuntimeException("url not specified in config file");
+			throw new RuntimeException("password not specified in config file");
 	}
 
 }

@@ -1,0 +1,6 @@
+11:28:50.495 [main] INFO  testClasses.baseClass - Username Entered
+11:28:52.677 [main] INFO  testClasses.baseClass - Password enterd
+11:29:35.537 [main] INFO  testClasses.baseClass - Assertion passed
+11:31:25.408 [main] INFO  testClasses.baseClass - Username Entered
+11:31:27.536 [main] INFO  testClasses.baseClass - Password enterd
+11:31:46.023 [main] INFO  testClasses.baseClass - Assertion passed
