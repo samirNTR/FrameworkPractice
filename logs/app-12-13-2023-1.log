@@ -1,0 +1,15 @@
+12:59:40.134 [main] INFO  testClasses.baseClass - Username Entered
+12:59:42.227 [main] INFO  testClasses.baseClass - Password enterd
+13:00:00.474 [main] INFO  testClasses.baseClass - Assertion passed
+13:19:23.924 [main] INFO  testClasses.baseClass - Username Entered
+13:19:26.018 [main] INFO  testClasses.baseClass - Password enterd
+13:19:44.708 [main] INFO  testClasses.baseClass - Assertion passed
+13:20:21.619 [main] INFO  testClasses.baseClass - Username Entered
+13:20:23.725 [main] INFO  testClasses.baseClass - Password enterd
+13:20:47.827 [main] INFO  testClasses.baseClass - Assertion passed
+13:27:49.133 [main] INFO  testClasses.baseClass - Username Entered
+13:27:51.222 [main] INFO  testClasses.baseClass - Password enterd
+13:28:09.378 [main] INFO  testClasses.baseClass - Assertion passed
+13:32:03.336 [main] INFO  testClasses.baseClass - Username Entered
+13:32:05.450 [main] INFO  testClasses.baseClass - Password enterd
+13:32:22.833 [main] INFO  testClasses.baseClass - Assertion passed

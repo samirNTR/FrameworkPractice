@@ -15,6 +15,7 @@ import org.testng.TestListenerAdapter;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -83,6 +84,9 @@ public class Reporting extends baseClass implements ITestListener {
 		test.log(Status.FAIL,
 				MarkupHelper.createLabel("Name of the failed test case is: " + Result.getName(), ExtentColor.RED));
 
+		
+		
+		
 		//Screenshot implementation
 		TakesScreenshot screenshotDriver = (TakesScreenshot) driver;
 		File screenshotFile = screenshotDriver.getScreenshotAs(OutputType.FILE);
@@ -104,8 +108,10 @@ public class Reporting extends baseClass implements ITestListener {
 			FileUtils.copyFile(screenshotFile, new File(screenShotPath));
 
 			// Adding screenshot to the Extent Report
-			test.fail("Captured Screenshot is below:" + test.addScreenCaptureFromPath(screenShotPath));
+			//test.fail("Captured Screenshot is below:" + test.addScreenCaptureFromPath(screenShotPath));
 
+
+			test.fail("Captured Screenshot is below:" + MediaEntityBuilder.createScreenCaptureFromPath(screenShotPath).build());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

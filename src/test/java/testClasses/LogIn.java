@@ -1,6 +1,7 @@
 package testClasses;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -96,6 +97,11 @@ public class LogIn extends baseClass {
 
 		}
 
+		Collections.sort(list);
+		
+		System.out.println("Price range "+list);
+		
+		
 		addToCartButtons.get(highestPriceIndex).click();
 		hp.clickOnShoppingCartButton();
 		Thread.sleep(5000);
@@ -105,7 +111,7 @@ public class LogIn extends baseClass {
 
 		String actTitle = driver.findElement(By.xpath("//span[text()='Your Cart']")).getText();
 		System.out.println(actTitle);
-		Assert.assertEquals(actTitle, "Your Cart", "I am in Your Cart Page");
+		Assert.assertEquals(actTitle, "Your Cart12333", "I am in Your Cart Page");
 
 	}
 }
