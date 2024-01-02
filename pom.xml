@@ -2,8 +2,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>MyTestNGProject</groupId>
-	<artifactId>MyTestNGProject</artifactId>
+	<groupId>MyTestProject</groupId>
+	<artifactId>MyTestProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<!-- Send Values for username and password at run time while running Maven
@@ -27,7 +27,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
+				<version>3.11.0</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -89,11 +89,12 @@
 			<scope>test</scope>
 		</dependency>
 
+
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
-    <version>7.14.0</version>
+    <version>7.15.0</version>
 </dependency>
 
 
@@ -141,12 +142,5 @@
 			<scope>test</scope>
 		</dependency>
 
-
-		<dependency>
-			<groupId>CucumberTestNG</groupId>
-			<artifactId>CucumberTestNG</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
-
+</dependencies>
 </project>
