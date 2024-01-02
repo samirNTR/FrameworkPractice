@@ -4,3 +4,12 @@
 14:27:13.652 [main] INFO  testClasses.LogIn - Username Entered
 14:27:15.736 [main] INFO  testClasses.LogIn - Password enterd
 14:27:37.722 [main] INFO  testClasses.LogIn - Assertion passed
+14:36:16.574 [main] INFO  testClasses.LogIn - Username Entered
+14:36:18.700 [main] INFO  testClasses.LogIn - Password enterd
+14:36:40.461 [main] INFO  testClasses.LogIn - Assertion passed
+14:46:29.711 [main] INFO  testClasses.LogIn - Username Entered
+14:46:31.811 [main] INFO  testClasses.LogIn - Password enterd
+14:46:48.041 [main] INFO  testClasses.LogIn - Assertion passed
+15:09:36.550 [main] INFO  testClasses.LogIn - Username Entered
+15:09:38.631 [main] INFO  testClasses.LogIn - Password enterd
+15:09:56.229 [main] INFO  testClasses.LogIn - Assertion passed
