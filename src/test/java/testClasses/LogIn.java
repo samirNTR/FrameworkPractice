@@ -59,7 +59,7 @@ public class LogIn extends baseClass {
 		Assert.assertEquals(actPage1, "https://www.saucedemo.com/inventory.html");
 		String title = driver.findElement(By.xpath("//span[text()='Products']")).getText();
 		Assert.assertEquals(title, "Products");
-
+  
 	}
 
 	@Test(dependsOnMethods = "verifyProductsPage")
@@ -111,7 +111,7 @@ public class LogIn extends baseClass {
 
 		String actTitle = driver.findElement(By.xpath("//span[text()='Your Cart']")).getText();
 		System.out.println(actTitle);
-		Assert.assertEquals(actTitle, "Your Cart12333", "I am in Your Cart Page");
+		Assert.assertEquals(actTitle, "Your Cart", "I am in Your Cart Page");
 
 	}
 }

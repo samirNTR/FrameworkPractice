@@ -25,7 +25,7 @@ public class baseClass {
 	public String username;
 	public String password;
 	public static WebDriver driver;
-	public Logger log=  (Logger) LogManager.getLogger();
+	public Logger log=  (Logger) LogManager.getLogger(this.getClass());
 	
 	@BeforeSuite
 	public void setUp() {

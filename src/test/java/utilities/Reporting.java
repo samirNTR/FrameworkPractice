@@ -101,7 +101,7 @@ public class Reporting extends baseClass implements ITestListener {
 		}
 
 		// Define the path for the screenshot file
-		String screenShotPath = screenshotDirPath + File.separator + Result.getName() + ".jpg";
+		String screenShotPath = screenshotDirPath + File.separator + Result.getName() + ".png";
 
 		try {
 			// Copying the screenshot file to the specified location
@@ -111,7 +111,7 @@ public class Reporting extends baseClass implements ITestListener {
 			//test.fail("Captured Screenshot is below:" + test.addScreenCaptureFromPath(screenShotPath));
 
 
-			test.fail("Captured Screenshot is below:" + MediaEntityBuilder.createScreenCaptureFromPath(screenShotPath).build());
+			//test.fail("Captured Screenshot is below:" + MediaEntityBuilder.createScreenCaptureFromPath(screenShotPath).build());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

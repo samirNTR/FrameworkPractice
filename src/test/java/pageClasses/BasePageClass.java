@@ -12,7 +12,7 @@ public class BasePageClass {
 
 	public  WebDriver driver;
 
-	public BasePageClass (WebDriver driver)
+	public  BasePageClass (WebDriver driver)
 	
 	{
 

@@ -2,7 +2,7 @@
 <Configuration status="WARN">
 
     <Properties>
-        <Property name="log-path">logs</Property>
+        <Property name="log-path">./logs</Property>
     </Properties>
 
     <Appenders>
@@ -26,7 +26,7 @@
     </Appenders>
 
     <Loggers>
-        <Root level="info">
+        <Root level="info">                                        <!--Root level="debug"-->
             <AppenderRef ref="Console"/>
             <AppenderRef ref="RollingFile"/>
         </Root>
