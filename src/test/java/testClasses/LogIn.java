@@ -45,6 +45,7 @@ public class LogIn extends baseClass {
 		hp.clickOnAboutLink();
 		Thread.sleep(2000);
 		String actPage = driver.getCurrentUrl();
+		
 		// Reporter.log("Actual Page is " + actPage);
 		Assert.assertEquals(actPage, "https://saucelabs.com/");
 		log.info("Assertion passed");
