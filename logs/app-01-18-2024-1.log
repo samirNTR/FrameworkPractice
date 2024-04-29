@@ -1,0 +1,6 @@
+12:43:28.707 [main] INFO  testClasses.LogIn - Username Entered
+12:43:30.821 [main] INFO  testClasses.LogIn - Password enterd
+12:43:43.071 [main] INFO  testClasses.LogIn - Assertion passed
+13:34:16.100 [main] INFO  testClasses.LogIn - Username Entered
+13:34:18.180 [main] INFO  testClasses.LogIn - Password enterd
+13:34:43.151 [main] INFO  testClasses.LogIn - Assertion passed

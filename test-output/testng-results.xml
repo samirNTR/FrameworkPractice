@@ -1,47 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[After navigate back URL https://www.saucedemo.com/inventory.html]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-01-02T14:15:18 IST" name="Suite" finished-at="2024-01-02T14:15:48 IST" duration-ms="29977">
+  <suite started-at="2024-04-29T20:16:49 IST" name="Suite" finished-at="2024-04-29T20:17:33 IST" duration-ms="43838">
     <groups>
     </groups>
-    <test started-at="2024-01-02T14:15:18 IST" name="Test" finished-at="2024-01-02T14:15:48 IST" duration-ms="29977">
-      <class name="testClasses.LogIn">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testClasses.LogIn@172ca72b]" started-at="2024-01-02T14:15:18 IST" name="setUp" finished-at="2024-01-02T14:15:18 IST" duration-ms="7" status="PASS">
+    <test started-at="2024-04-29T20:16:49 IST" name="Parameterize_LogIn" finished-at="2024-04-29T20:17:31 IST" duration-ms="42574">
+      <class name="testClasses.Parameterize_LogIn">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testClasses.Parameterize_LogIn@12cd9150]" started-at="2024-04-29T20:16:49 IST" name="setUp" finished-at="2024-04-29T20:16:49 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testClasses.LogIn@172ca72b]" started-at="2024-01-02T14:15:18 IST" name="launchBrowser" finished-at="2024-01-02T14:15:20 IST" duration-ms="2174" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:testClasses.Parameterize_LogIn@12cd9150]" started-at="2024-04-29T20:16:49 IST" name="launchBrowser" finished-at="2024-04-29T20:16:53 IST" duration-ms="3508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="verifyLoginPage()[pri:1, instance:testClasses.LogIn@172ca72b]" started-at="2024-01-02T14:15:20 IST" name="verifyLoginPage" finished-at="2024-01-02T14:15:30 IST" duration-ms="9465" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testClasses.Parameterize_LogIn@12cd9150]" started-at="2024-04-29T20:16:53 IST" name="loginTest" data-provider="userCredentials" finished-at="2024-04-29T20:16:59 IST" duration-ms="6831" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testClasses.Parameterize_LogIn@12cd9150]" started-at="2024-04-29T20:16:59 IST" name="loginTest" data-provider="userCredentials" finished-at="2024-04-29T20:17:06 IST" duration-ms="6630" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testClasses.Parameterize_LogIn@12cd9150]" started-at="2024-04-29T20:17:06 IST" name="loginTest" data-provider="userCredentials" finished-at="2024-04-29T20:17:18 IST" duration-ms="11823" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testClasses.Parameterize_LogIn@12cd9150]" started-at="2024-04-29T20:17:18 IST" name="loginTest" data-provider="userCredentials" finished-at="2024-04-29T20:17:25 IST" duration-ms="6704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[error_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:testClasses.Parameterize_LogIn@12cd9150]" started-at="2024-04-29T20:17:25 IST" name="loginTest" data-provider="userCredentials" finished-at="2024-04-29T20:17:31 IST" duration-ms="6628" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[visual_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.Parameterize_LogIn@12cd9150]" started-at="2024-04-29T20:17:31 IST" name="closeBrowser" finished-at="2024-04-29T20:17:31 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testClasses.Parameterize_LogIn -->
+    </test> <!-- Parameterize_LogIn -->
+    <test started-at="2024-04-29T20:16:49 IST" name="LogIn" finished-at="2024-04-29T20:17:33 IST" duration-ms="43838">
+      <class name="testClasses.LogIn">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:testClasses.LogIn@71104a4]" started-at="2024-04-29T20:16:49 IST" name="launchBrowser" finished-at="2024-04-29T20:16:52 IST" duration-ms="3256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyLoginPage()[pri:1, instance:testClasses.LogIn@71104a4]" started-at="2024-04-29T20:16:53 IST" name="verifyLoginPage" finished-at="2024-04-29T20:17:02 IST" duration-ms="9656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginPage -->
-        <test-method signature="verifyCurrentUrl()[pri:0, instance:testClasses.LogIn@172ca72b]" started-at="2024-01-02T14:15:30 IST" name="verifyCurrentUrl" finished-at="2024-01-02T14:15:38 IST" depends-on-methods="testClasses.LogIn.verifyLoginPage" duration-ms="7994" status="PASS">
+        <test-method signature="verifyCurrentUrl()[pri:0, instance:testClasses.LogIn@71104a4]" started-at="2024-04-29T20:17:02 IST" name="verifyCurrentUrl" finished-at="2024-04-29T20:17:23 IST" depends-on-methods="testClasses.LogIn.verifyLoginPage" duration-ms="20550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCurrentUrl -->
-        <test-method signature="verifyProductsPage()[pri:0, instance:testClasses.LogIn@172ca72b]" started-at="2024-01-02T14:15:38 IST" name="verifyProductsPage" finished-at="2024-01-02T14:15:42 IST" depends-on-methods="testClasses.LogIn.verifyCurrentUrl" duration-ms="4374" status="PASS">
+        <test-method signature="verifyProductsPage()[pri:0, instance:testClasses.LogIn@71104a4]" started-at="2024-04-29T20:17:23 IST" name="verifyProductsPage" finished-at="2024-04-29T20:17:27 IST" depends-on-methods="testClasses.LogIn.verifyCurrentUrl" duration-ms="4159" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[After navigate back URL https://www.saucedemo.com/inventory.html]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyProductsPage -->
-        <test-method signature="verifyPriceDynamically()[pri:0, instance:testClasses.LogIn@172ca72b]" started-at="2024-01-02T14:15:42 IST" name="verifyPriceDynamically" finished-at="2024-01-02T14:15:47 IST" depends-on-methods="testClasses.LogIn.verifyProductsPage" duration-ms="5512" status="PASS">
+        <test-method signature="verifyPriceDynamically()[pri:0, instance:testClasses.LogIn@71104a4]" started-at="2024-04-29T20:17:27 IST" name="verifyPriceDynamically" finished-at="2024-04-29T20:17:32 IST" depends-on-methods="testClasses.LogIn.verifyProductsPage" duration-ms="5378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPriceDynamically -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.LogIn@172ca72b]" started-at="2024-01-02T14:15:47 IST" name="closeBrowser" finished-at="2024-01-02T14:15:48 IST" duration-ms="272" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.LogIn@71104a4]" started-at="2024-04-29T20:17:32 IST" name="closeBrowser" finished-at="2024-04-29T20:17:33 IST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testClasses.LogIn -->
-    </test> <!-- Test -->
+    </test> <!-- LogIn -->
   </suite> <!-- Suite -->
 </testng-results>

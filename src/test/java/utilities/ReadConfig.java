@@ -6,9 +6,9 @@ import java.util.*;
 
 public class ReadConfig {
 
-	 Properties prop;
+	 public Properties prop;
 
-	public void readConfigFille() {
+	public synchronized void readConfigFille() {
 
 		File src = new File("./Configuration/config.properties");
 		try {
@@ -44,8 +44,9 @@ public class ReadConfig {
 			throw new RuntimeException("url not specified in config file");
 	}
 
-	public  String getUsername() {
+	public  String getUsername1() {
 
+		
 		String username = prop.getProperty("username");
 		if (username != null)
 		{
@@ -54,6 +55,22 @@ public class ReadConfig {
 		else
 			throw new RuntimeException("username not specified in config file");
 	}
+	
+	
+public  String getUsername() {
+
+		
+		String username = prop.getProperty("username");
+		if (username != null)
+		{
+			return username;
+		}
+		else
+			throw new RuntimeException("username not specified in config file");
+	}
+	
+	
+	
 
 	public String getPassword() {
 

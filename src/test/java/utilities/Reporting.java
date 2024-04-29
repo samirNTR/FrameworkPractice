@@ -38,7 +38,7 @@ public class Reporting extends baseClass implements ITestListener {
 		reports = new ExtentReports();
 		reports.attachReporter(htmlReporter);
 
-		// add system information/environment info to reports
+		// add system information/environment info to reports  
 		reports.setSystemInfo("Machine:", "testpc1");
 		reports.setSystemInfo("OS", "windows 11");
 		reports.setSystemInfo("user name:", "Samir");
@@ -70,9 +70,7 @@ public class Reporting extends baseClass implements ITestListener {
 
 		test = reports.createTest(Result.getName());
 
-		test.log(Status.PASS,
-
-				MarkupHelper.createLabel("Name of the passed test case is: " + Result.getName(), ExtentColor.GREEN));
+		test.log(Status.PASS, MarkupHelper.createLabel("Name of the passed test case is: " + Result.getName(), ExtentColor.GREEN));
 	}
 
 	// When Test case get failed, this method is called.
@@ -88,8 +86,8 @@ public class Reporting extends baseClass implements ITestListener {
 		
 		
 		//Screenshot implementation
-		TakesScreenshot screenshotDriver = (TakesScreenshot) driver;
-		File screenshotFile = screenshotDriver.getScreenshotAs(OutputType.FILE);
+		
+		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
 		 // Define the path for the screenshot directory
 		String screenshotDirPath = System.getProperty("user.dir") + File.separator + "Screenshots"; 
@@ -142,6 +140,8 @@ public class Reporting extends baseClass implements ITestListener {
 	 * public void onTestFailedButWithinSuccessPercentage(ITestResult Result) {
 	 * 
 	 * }
+	 * FileUtils.copyFile(src, new File(System.getProperty("user.dir")+File.separator+"Screenshots"+File.separator+result.getName()+".png");
 	 */
+
 
 }

@@ -25,19 +25,20 @@ public class BasePageClass {
 
 	//Three Dots elements
 	@FindBy(xpath="//button[@id='react-burger-menu-btn']")
-	WebElement openMenuButton;
+	private WebElement openMenuButton;
+	
    //All items
 	@FindBy(xpath = "//a[@id='inventory_sidebar_link']")   
-	WebElement allItemsLink;
+	private WebElement allItemsLink;
 	//About
 	@FindBy(xpath = "//a[@id='about_sidebar_link']")
-	WebElement aboutLink;
+	private WebElement aboutLink;
 	//Logout
 	@FindBy(xpath = "//a[@id='logout_sidebar_link']")
-	WebElement logoutLink;
+	private WebElement logoutLink;
 	//Reset App store
 	@FindBy(xpath = "//a[@id='reset_sidebar_link']")
-	WebElement resetAppStateLink;
+	private WebElement resetAppStateLink;
 	
 
 
@@ -45,40 +46,41 @@ public class BasePageClass {
 	
 	//Cart Badge
 	@FindBy(xpath="//a[@class='shopping_cart_link']")
-	WebElement cartBadge;
+	private WebElement cartBadge;
 
 	
 	public void clickOnOpenMenuButton()
 	{
-		openMenuButton.click();
+		this.openMenuButton.click();
+		
 	}
 	
 
 	public void clickOnAllItemsLink()
 	{
-		allItemsLink.click();
+		this.allItemsLink.click();
 	}
 
 	public void clickOnAboutLink()
 	{
-		aboutLink.click();
+		this.aboutLink.click();
 	}
 
 	public void clickOnLogOut()
 	{
-		logoutLink.click();
+		this.logoutLink.click();
 	}
 
 	public void clickOnResetAppStore()
 	{
-		resetAppStateLink.click();
+		this.resetAppStateLink.click();
 	
 	}
 	
 	public void clickOnShoppingCartButton() 
 	
 	{
-		cartBadge.click();
+		this.cartBadge.click();
 		
 	}
 	

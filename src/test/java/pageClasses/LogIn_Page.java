@@ -15,23 +15,23 @@ public class LogIn_Page extends BasePageClass {
 	}
 
 	@FindBy(xpath = "//input[@data-test='username']")
-	WebElement username;
+	private WebElement username;
 
 	@FindBy(xpath = "//input[@data-test='password'] ")
-	WebElement password;
+	private WebElement password;
 
 	@FindBy(xpath = "//input[@type='submit'] ")
-	WebElement clicklogin;
+	private WebElement clicklogin;
 
 	public void enterUsername(String userName) {
-		username.sendKeys(userName);
+		this.username.sendKeys(userName);
 	}
 
 	public void enterPassword(String passWord) {
-		password.sendKeys(passWord);
+		this.password.sendKeys(passWord);
 	}
 
 	public void clickLogin() {
-		clicklogin.click();
+		this.clicklogin.click();
 	}
 }

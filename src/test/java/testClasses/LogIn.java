@@ -15,15 +15,17 @@ import pageClasses.Products_Page;
 
 public class LogIn extends baseClass {
 
-	public LogIn_Page pg;
-	public Products_Page hp;
+	public  LogIn_Page pg;
+	public  Products_Page hp;
 
+	
 	@Test(priority = 1) // 1...............................................
 	public void verifyLoginPage() throws InterruptedException {
+	
 
-		pg = new LogIn_Page(driver);
-		hp = new Products_Page(driver);
-
+	 pg=new LogIn_Page(driver); 
+	 hp= new Products_Page(driver);
+		 
 		pg.enterUsername(username);
 		Thread.sleep(2000);
 		log.info("Username Entered"); // Logger1
@@ -63,7 +65,7 @@ public class LogIn extends baseClass {
   
 	}
 
-	@Test(dependsOnMethods = "verifyProductsPage")
+	@Test(dependsOnMethods  = "verifyProductsPage")
 	public void verifyPriceDynamically() throws InterruptedException {
 		List<WebElement> allPrices = driver.findElements(By.className("inventory_item_price"));
 		List<Double> list = new ArrayList<Double>();
