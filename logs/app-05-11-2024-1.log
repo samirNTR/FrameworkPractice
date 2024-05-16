@@ -1,0 +1,3 @@
+19:17:10.305 [TestNG-tests-1] INFO  testClasses.LogIn - Username Entered
+19:17:12.401 [TestNG-tests-1] INFO  testClasses.LogIn - Password enterd
+19:17:33.111 [TestNG-tests-1] INFO  testClasses.LogIn - Assertion passed

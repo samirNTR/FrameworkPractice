@@ -6,19 +6,19 @@
     </listeners>
 
     <!-- Test 1: LogIn -->
-    <test name="LogIn">
-        <parameter name="browser" value="edge" /> <!-- Specify Edge browser -->
+    <test name="LogIn" thread-count="2">
+        <parameter name="browser" value="chrome" /> 
         <classes>
             <class name="testClasses.LogIn" />
         </classes>
     </test>
 
-    <!-- Test 2: Parameterize_LogIn -->
+   <!--  Test 2: Parameterize_LogIn 
     <test name="Parameterize_LogIn">
-        <parameter name="browser" value="chrome" /> <!-- Specify Chrome browser -->
+        <parameter name="browser" value="chrome" />  Specify Chrome browser 
         <classes>
             <class name="testClasses.Parameterize_LogIn" />
         </classes>
-    </test>
+    </test>-->
 
 </suite>

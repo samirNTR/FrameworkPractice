@@ -12,9 +12,8 @@ public class ReadConfig {
 
 		File src = new File("./Configuration/config.properties");
 		try {
-
-			FileInputStream fis = new FileInputStream(src);
 			prop = new Properties();
+			FileInputStream fis = new FileInputStream(src);
 			prop.load(fis);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -44,17 +43,14 @@ public class ReadConfig {
 			throw new RuntimeException("url not specified in config file");
 	}
 
-	public  String getUsername1() {
-
-		
-		String username = prop.getProperty("username");
-		if (username != null)
-		{
-			return username;
-		}
-		else
-			throw new RuntimeException("username not specified in config file");
-	}
+	/*
+	 * public String getUsername1() {
+	 * 
+	 * 
+	 * String username = prop.getProperty("username"); if (username != null) {
+	 * return username; } else throw new
+	 * RuntimeException("username not specified in config file"); }
+	 */
 	
 	
 public  String getUsername() {

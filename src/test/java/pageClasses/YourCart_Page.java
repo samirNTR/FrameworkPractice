@@ -16,16 +16,31 @@ public class YourCart_Page  extends BasePageClass{
 
 	//Continue Shopping
 	@FindBy(xpath="//button[@id='continue-shopping']")
-	WebElement continueShoppingButton;
+	private WebElement continueShoppingButton;
 	
 	//CheckOut Button
 	@FindBy(xpath="//button[@id='checkout']")
-	WebElement checkOutButton;
+	private WebElement checkOutButton;
 	
 	//Remove Button
 	@FindBy(xpath="//button[text()='Remove']")
-	WebElement removeButton;
-		
+	private WebElement removeButton;
 	
 	
+	
+	public void clickOnContinueShopping()
+	{
+		this.continueShoppingButton.click();
+	}
+	
+	
+	public void clickOnChecOutButton()
+	{
+		this.checkOutButton.click();
+	}
+	
+	public void clickOnRemoveButton()
+	{
+		this.removeButton.click();
+	}
 }

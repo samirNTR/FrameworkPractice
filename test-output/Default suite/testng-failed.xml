@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testClasses.Parameterize_LogIn">
+      <class name="testClasses.LogIn">
         <methods>
           <include name="closeBrowser"/>
+          <include name="verifyLoginPage"/>
           <include name="setUp"/>
-          <include name="loginTest" invocation-numbers="5"/>
+          <include name="verifyProductsPage"/>
           <include name="launchBrowser"/>
+          <include name="verifyCurrentUrl"/>
+          <include name="verifyPriceDynamically"/>
         </methods>
-      </class> <!-- testClasses.Parameterize_LogIn -->
+      </class> <!-- testClasses.LogIn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

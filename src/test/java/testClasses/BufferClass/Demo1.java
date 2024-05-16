@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -25,6 +27,10 @@ public class Demo1 {
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			//Enter login credentials
+			
+
+			
+		
 			WebElement username = driver.findElement(By.xpath(" //input[@data-test='username']"));
 			username.sendKeys("standard_user");
 			WebElement password = driver.findElement(By.xpath("//input[@data-test='password'] "));
