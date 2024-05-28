@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes" thread-count="4">
+    <listeners>
+        <listener class-name="utilities.Reporting" />
+    </listeners>
+
+    <!-- Test 1: LogIn -->
+    <test name="LogIn">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="testClasses.LogIn" />
+            <class name="testClasses.Parameterize_LogIn" />
+        </classes>
+    </test>
+    
+</suite>

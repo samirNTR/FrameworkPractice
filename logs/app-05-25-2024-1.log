@@ -1,0 +1,27 @@
+15:40:25.941 [TestNG-tests-1] INFO  testClasses.LogIn - Username Entered
+15:40:28.114 [TestNG-tests-1] INFO  testClasses.LogIn - Password enterd
+15:40:49.725 [TestNG-tests-1] INFO  testClasses.LogIn - Assertion passed
+15:40:54.085 [TestNG-tests-1] INFO  testClasses.LogIn - highest priced product selected
+15:40:59.266 [TestNG-tests-1] INFO  testClasses.LogIn - Entered your cart page
+15:40:59.388 [TestNG-tests-1] INFO  testClasses.LogIn - Clicked on Check Out Button
+15:41:03.833 [TestNG-tests-1] INFO  testClasses.LogIn - All data entered
+15:41:03.974 [TestNG-tests-1] INFO  testClasses.LogIn - Button clicked
+15:41:04.020 [TestNG-tests-1] INFO  testClasses.LogIn - Landed on Checkout overview
+15:41:18.662 [TestNG-tests-1] INFO  testClasses.LogIn - Username Entered
+15:41:20.817 [TestNG-tests-1] INFO  testClasses.LogIn - Password enterd
+15:42:02.354 [TestNG-tests-1] INFO  testClasses.LogIn - Assertion passed
+15:42:07.147 [TestNG-tests-1] INFO  testClasses.LogIn - highest priced product selected
+15:42:12.319 [TestNG-tests-1] INFO  testClasses.LogIn - Entered your cart page
+15:42:12.467 [TestNG-tests-1] INFO  testClasses.LogIn - Clicked on Check Out Button
+15:42:17.007 [TestNG-tests-1] INFO  testClasses.LogIn - All data entered
+15:42:17.148 [TestNG-tests-1] INFO  testClasses.LogIn - Button clicked
+15:42:17.191 [TestNG-tests-1] INFO  testClasses.LogIn - Landed on Checkout overview
+15:51:56.093 [TestNG-tests-1] INFO  testClasses.LogIn - Username Entered
+15:51:58.225 [TestNG-tests-1] INFO  testClasses.LogIn - Password enterd
+15:52:26.837 [TestNG-tests-1] INFO  testClasses.LogIn - Assertion passed
+15:52:31.242 [TestNG-tests-1] INFO  testClasses.LogIn - highest priced product selected
+15:52:36.413 [TestNG-tests-1] INFO  testClasses.LogIn - Entered your cart page
+15:52:36.518 [TestNG-tests-1] INFO  testClasses.LogIn - Clicked on Check Out Button
+15:52:40.942 [TestNG-tests-1] INFO  testClasses.LogIn - All data entered
+15:52:41.083 [TestNG-tests-1] INFO  testClasses.LogIn - Button clicked
+15:52:41.120 [TestNG-tests-1] INFO  testClasses.LogIn - Landed on Checkout overview

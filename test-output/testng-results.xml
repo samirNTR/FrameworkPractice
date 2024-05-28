@@ -1,58 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[After navigate back URL https://www.saucedemo.com/inventory.html]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-05-15T23:16:26 IST" name="Suite" finished-at="2024-05-15T23:17:17 IST" duration-ms="50560">
+  <suite started-at="2024-05-28T12:14:53 IST" name="Suite" finished-at="2024-05-28T12:14:53 IST" duration-ms="0">
     <groups>
     </groups>
-    <test started-at="2024-05-15T23:16:26 IST" name="LogIn" finished-at="2024-05-15T23:17:17 IST" duration-ms="50560">
-      <class name="testClasses.LogIn">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testClasses.LogIn@4985cbcb]" started-at="2024-05-15T23:16:26 IST" name="setUp" finished-at="2024-05-15T23:16:26 IST" duration-ms="17" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:testClasses.LogIn@4985cbcb]" started-at="2024-05-15T23:16:27 IST" name="launchBrowser" finished-at="2024-05-15T23:16:30 IST" duration-ms="3065" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="verifyLoginPage()[pri:1, instance:testClasses.LogIn@4985cbcb]" started-at="2024-05-15T23:16:30 IST" name="verifyLoginPage" finished-at="2024-05-15T23:16:39 IST" duration-ms="9706" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPage -->
-        <test-method signature="verifyCurrentUrl()[pri:0, instance:testClasses.LogIn@4985cbcb]" started-at="2024-05-15T23:16:39 IST" name="verifyCurrentUrl" finished-at="2024-05-15T23:17:02 IST" depends-on-methods="testClasses.LogIn.verifyLoginPage" duration-ms="22767" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCurrentUrl -->
-        <test-method signature="verifyProductsPage()[pri:0, instance:testClasses.LogIn@4985cbcb]" started-at="2024-05-15T23:17:02 IST" name="verifyProductsPage" finished-at="2024-05-15T23:17:06 IST" depends-on-methods="testClasses.LogIn.verifyCurrentUrl" duration-ms="4153" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[After navigate back URL https://www.saucedemo.com/inventory.html]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyProductsPage -->
-        <test-method signature="verifyPriceDynamically()[pri:0, instance:testClasses.LogIn@4985cbcb]" started-at="2024-05-15T23:17:06 IST" name="verifyPriceDynamically" finished-at="2024-05-15T23:17:12 IST" depends-on-methods="testClasses.LogIn.verifyProductsPage" duration-ms="5418" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPriceDynamically -->
-        <test-method signature="checkOutValidation()[pri:0, instance:testClasses.LogIn@4985cbcb]" started-at="2024-05-15T23:17:12 IST" name="checkOutValidation" finished-at="2024-05-15T23:17:17 IST" depends-on-methods="testClasses.LogIn.verifyPriceDynamically" duration-ms="4768" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkOutValidation -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testClasses.LogIn@4985cbcb]" started-at="2024-05-15T23:17:17 IST" name="closeBrowser" finished-at="2024-05-15T23:17:17 IST" duration-ms="253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testClasses.LogIn -->
-    </test> <!-- LogIn -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -12,6 +12,7 @@
             <class name="testClasses.LogIn" />
         </classes>
     </test>
+    
 
     <!-- Test 2: Parameterize_LogIn -->
     <test name="Parameterize_LogIn">
@@ -20,5 +21,6 @@
             <class name="testClasses.Parameterize_LogIn" />
         </classes>
     </test>
+    
 
 </suite>

@@ -8,7 +8,7 @@ public class ReadConfig {
 
 	 public Properties prop;
 
-	public synchronized void readConfigFille() {
+	public void readConfigFille() {
 
 		File src = new File("./Configuration/config.properties");
 		try {

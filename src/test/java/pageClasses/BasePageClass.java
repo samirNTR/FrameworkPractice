@@ -15,15 +15,14 @@ public class BasePageClass {
 	public  BasePageClass (WebDriver driver)
 	
 	{
-
+       PageFactory.initElements(driver,this);
 		this.driver = driver;
-
-		PageFactory.initElements(driver,this);
 
 	}
 	
 
 	//Three Dots elements
+	
 	@FindBy(xpath="//button[@id='react-burger-menu-btn']")
 	private WebElement openMenuButton;
 	

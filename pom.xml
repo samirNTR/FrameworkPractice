@@ -11,6 +11,7 @@
 
 
 	<build>
+	
 		<plugins>
 
 			<!-- 1-->
@@ -19,14 +20,19 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.2.3</version>
 				<configuration>
-					<!--<systemPropertyVariables>
-						<browser>chrome</browser>
-						<selenium.grid.enabled>true</selenium.grid.enabled>
-					</systemPropertyVariables>-->
+			
+					<systemPropertyVariables>
+						<!--<browser>chrome</browser> -->
+						<selenium.grid.enabled>false</selenium.grid.enabled>
+					
+					</systemPropertyVariables>
+					
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
-						<suiteXmlFile>testng2.xml</suiteXmlFile>
+						<!--<suiteXmlFile>testng2.xml</suiteXmlFile>-->
 					</suiteXmlFiles>
+					<parallel>tests</parallel>
+					<threadCount>2</threadCount>
 				</configuration>
 			</plugin>
 
